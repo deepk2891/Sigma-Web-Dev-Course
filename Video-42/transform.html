@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Transform</title>
+		<style>
+			body {
+				font-family: sans-serif;
+			}
+			.container {
+				max-width: 1320px;
+				margin: 0 auto;
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: center;
+				align-items: center;
+				position: relative;
+			}
+			.text {
+				position: absolute;
+				font-size: 4rem;
+				font-weight: 800;
+				color: #ff8000;
+				transform: rotate(90deg) translateY(-700px);
+			}
+
+			.box {
+				width: 300px;
+				height: 300px;
+				margin: 10px;
+				background-color: #101920;
+			}
+			.box {
+				align-items: center;
+				margin: 10px;
+			}
+			img {
+				height: 150px;
+				width: 150px;
+				margin-left: 24%;
+				margin-top: 5%;
+			}
+			h1 {
+				color: #ffe715;
+				text-align: center;
+				line-height: 20px;
+			}
+			p {
+				text-align: center;
+				color: #ffe715;
+				font-size: 24px;
+				line-height: 20px;
+			}
+
+			h1::before {
+				content: "✔";
+			}
+
+			h1::after {
+				content: "😁";
+			}
+
+			/* ------------------------------------------------------------------- */
+			#a1:hover {
+				transform: rotateZ(45deg);
+			}
+			#a2:hover {
+				transform: rotateX(300deg);
+			}
+			#a3:hover {
+				transform: rotateY(155deg);
+			}
+			/* ------------------------------------------------------------------- */
+			#b1:hover {
+				transform: scale(1.3);
+			}
+			#b2:hover {
+				transform: scaleX(1.5);
+			}
+			#b3:hover {
+				transform: scaleY(1.5);
+			}
+			/* ------------------------------------------------------------------- */
+			#c1:hover {
+				transform: skew(30deg);
+			}
+			#c2:hover {
+				transform: skewX(30deg);
+			}
+			#c3:hover {
+				transform: skewY(30deg);
+			}
+			/* ------------------------------------------------------------------- */
+			#d1:hover {
+				transform: translate(20px, 10px);
+			}
+			#d2:hover {
+				transform: translateX(20px);
+			}
+			#d3:hover {
+				transform: translateY(10px);
+			}
+			/* ------------------------------------------------------------------- */
+			#e1:hover {
+				transform: translate(50px, 20px);
+			}
+			#e2:hover {
+				transform: translate(20%, 0%);
+			}
+			#e3:hover {
+				transform: translate(0%, 20%);
+			}
+			/* ------------------------------------------------------------------- */
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<p class="text">Hover image to Transform</p>
+			<div class="box">
+				<img src="image.png" alt="" />
+				<h1>SIMPLE</h1>
+				<p>REGULAR</p>
+			</div>
+			<div class="box">
+				<img id="a1" src="image.png" alt="" />
+				<h1>1. Rotate</h1>
+				<p>transform:rotateZ()</p>
+			</div>
+			<div class="box">
+				<img id="a2" src="image.png" alt="" />
+				<h1>2. Rotate</h1>
+				<p>transform:rotateX()</p>
+			</div>
+			<div class="box">
+				<img id="a3" src="image.png" alt="" />
+				<h1>3. Rotate</h1>
+				<p>transform:rotateY()</p>
+			</div>
+			<div class="box">
+				<img id="b1" src="image.png" alt="" />
+				<h1>1. scale</h1>
+				<p>scale(x)</p>
+			</div>
+			<div class="box">
+				<img id="b2" src="image.png" alt="" />
+				<h1>2. scale</h1>
+				<p>scaleX(x)</p>
+			</div>
+			<div class="box">
+				<img id="b3" src="image.png" alt="" />
+				<h1>3. scale</h1>
+				<p>scaleY(y)</p>
+			</div>
+			<div class="box">
+				<img id="c1" src="image.png" alt="" />
+				<h1>1. skew</h1>
+				<p>skew(ndeg)</p>
+			</div>
+			<div class="box">
+				<img id="c2" src="image.png" alt="" />
+				<h1>2. skew</h1>
+				<p>skewX(ndeg)</p>
+			</div>
+			<div class="box">
+				<img id="c3" src="image.png" alt="" />
+				<h1>3. skew</h1>
+				<p>skewY(ndeg)</p>
+			</div>
+			<div class="box">
+				<img id="d1" src="image.png" alt="" />
+				<h1>1. Translate</h1>
+				<p>translate(npx)</p>
+			</div>
+			<div class="box">
+				<img id="d2" src="image.png" alt="" />
+				<h1>2. Translate</h1>
+				<p>translateX(x)</p>
+			</div>
+			<div class="box">
+				<img id="d3" src="image.png" alt="" />
+				<h1>3. Translate</h1>
+				<p>translateY(y)</p>
+			</div>
+			<div class="box">
+				<img id="e1" src="image.png" alt="" />
+				<h1>1. Transform</h1>
+				<p>translate(npx)</p>
+			</div>
+			<div class="box">
+				<img id="e2" src="image.png" alt="" />
+				<h1>2. Transform</h1>
+				<p>translateX(x)</p>
+			</div>
+			<div class="box">
+				<img id="e3" src="image.png" alt="" />
+				<h1>3. Transform</h1>
+				<p>translateY(y)</p>
+			</div>
+		</div>
+	</body>
+</html>
