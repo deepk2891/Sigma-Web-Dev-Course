@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<script>
+			//🟨Create a faulty calcualtor using javascript
+			//	🟩This faulty calculator does following:
+			//	🟦1. It takes two numbers as input from the user
+			//	🟦2. It performs wrong operations as follow:
+			//		+ ---> -
+			//		* ---> +
+			//		- ---> /
+			//		/ ---> **
+			//	🟩It performs wrong operation 10% of the time
+
+			let randomNumber = Math.random()
+			console.log(randomNumber)
+
+			// let num1 = Number(prompt("enter first number"))
+			// let num2 = Number(prompt("enter Second number"))
+			// let ch = prompt("enter what you want '+,-,*,/,' ")
+
+			let num1 = 5
+			let num2 = 10
+
+			if (randomNumber < 0.1) {
+				console.log("Addition " + (num1 - num2))
+				console.log("Multiply " + (num1 + num2))
+				console.log("Subtract " + num1 / num2)
+				console.log("Devision " + num1 ** num2)
+			} else {
+				console.log(`Addition  ${num1 + num2}`)
+				console.log(`Multiply  ${num1 * num2}`)
+				console.log(`Subtract  ${num1 - num2}`)
+				console.log(`Devision  ${num1 / num2}`)
+			}
+
+			// if (randomNumber < 0.1) {
+			// 	switch (ch) {
+			// 		case "+":
+			// 			console.log(num1 + num2)
+			// 			break
+			// 		case "*":
+			// 			console.log(num1 * num2)
+			// 			break
+			// 		case "/":
+			// 			console.log(num1 / num2)
+			// 			break
+			// 		case "-":
+			// 			console.log(num1 - num2)
+			// 			break
+			// 		default:
+			// 			console.log("wrong input")
+			// 			break
+			// 	}
+			// } else {
+			// 	switch (ch) {
+			// 		case "+":
+			// 			console.log(num1 - num2)
+			// 			break
+			// 		case "*":
+			// 			console.log(num1 + num2)
+			// 			break
+			// 		case "/":
+			// 			console.log(num1 ** num2)
+			// 			break
+			// 		case "-":
+			// 			console.log(num1 / num2)
+			// 			break
+			// 		default:
+			// 			console.log("wrong input")
+			// 			break
+			// 	}
+			// }
+		</script>
+	</body>
+</html>
