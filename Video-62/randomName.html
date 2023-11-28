@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body></body>
+</html>
+
+<script>
+	const random1to9 = Math.floor(Math.random() * 9) + 1
+	console.log(random1to9)
+
+	const adj = {
+		1: "Crazy",
+		2: "Amazing",
+		3: "Fire",
+	}
+	const shopName = {
+		1: "Engine",
+		2: "Food",
+		3: "Garments",
+	}
+	const anotherWord = {
+		1: "Bros",
+		2: "Limited",
+		3: "Hub",
+	}
+
+	let word1
+	let word2
+	let word3
+
+	// const randomWord = () => {
+	// 	if (random1to9 >= 1 && random1to9 <= 3) {
+	// 		word1 = adj[Math.floor(Math.random() * 3 + 1)]
+	// 		word2 = shopName[Math.floor(Math.random() * 3 + 1)]
+	// 		word3 = anotherWord[Math.floor(Math.random() * 3 + 1)]
+	// 		console.log(word1)
+	// 		console.log(word2)
+	// 		console.log(word3)
+	// 	} else if (random1to9 >= 4 && random1to9 <= 6) {
+	// 		word1 = adj[Math.floor(Math.random() * 3 + 1)]
+	// 		word2 = shopName[Math.floor(Math.random() * 3 + 1)]
+	// 		word3 = anotherWord[Math.floor(Math.random() * 3 + 1)]
+	// 		console.log(word1)
+	// 		console.log(word2)
+	// 		console.log(word3)
+	// 	} else if (random1to9 >= 7 && random1to9 <= 9) {
+	// 		word1 = adj[Math.floor(Math.random() * 3 + 1)]
+	// 		word2 = shopName[Math.floor(Math.random() * 3 + 1)]
+	// 		word3 = anotherWord[Math.floor(Math.random() * 3 + 1)]
+	// 		console.log(word1)
+	// 		console.log(word2)
+	// 		console.log(word3)
+	// 	}
+	// }
+	// randomWord()
+
+	const randomWord = () => {
+		const getRandomWord = () => Math.floor(Math.random() * 3 + 1)
+
+		word1 = adj[getRandomWord()]
+		word2 = shopName[getRandomWord()]
+		word3 = anotherWord[getRandomWord()]
+
+		console.log(word1)
+		console.log(word2)
+		console.log(word3)
+	}
+	randomWord()
+
+	console.log(`Business name : ${word1} ${word2} ${word3}`)
+</script>
