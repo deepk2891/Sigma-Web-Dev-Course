@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			.container {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				gap: 23px;
+			}
+			.box {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				height: 45px;
+				width: 45px;
+				border: 2px solid black;
+				background-color: var(--random-bg-color);
+				color: var(--random-color);
+			}
+		</style>
+	</head>
+	<body>
+		<!-- Given 5 boxes, Assign a random color and a random background to each box using DOM concepts -->
+		<div class="container">
+			<div class="box">Box</div>
+			<div class="box">Box</div>
+			<div class="box">Box</div>
+			<div class="box">Box</div>
+			<div class="box">Box</div>
+		</div>
+		<button onclick="changeColors()">Click</button>
+	</body>
+</html>
+
+<script>
+	let box = document.querySelectorAll(".box")
+
+	function changeColors() {
+		document.documentElement.style.setProperty("--random-bg-color", getRandomColor())
+		document.documentElement.style.setProperty("--random-color", getRandomColor())
+	}
+
+	function getRandomColor() {
+		const letters = "0123456789ABCDEF"
+		let color = "#"
+		for (let i = 0; i < 6; i++) {
+			color += letters[Math.floor(Math.random() * 16)]
+		}
+		return color
+	}
+</script>
