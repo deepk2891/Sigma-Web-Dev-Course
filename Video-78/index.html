@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Hacking Simulator</title>
+		<style>
+			body {
+				background-color: #00ff00;
+				color: #000;
+				font-family: monospace;
+				text-align: center;
+				padding: 50px;
+				font-size: 2rem;
+			}
+			.blink {
+				animation: blink 1s infinite;
+			}
+			@keyframes blink {
+				0%,
+				20%,
+				50%,
+				80%,
+				100% {
+					opacity: 1;
+				}
+				40%,
+				60% {
+					opacity: 0;
+				}
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="output"></div>
+
+		<script src="./script.js"></script>
+	</body>
+</html>
